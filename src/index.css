@@ -1,0 +1,13 @@
+@import "tailwindcss";
+.button {
+    @apply bg-blue-700 hover:bg-blue-700 px-4 py-2 rounded-lg text-white
+}
+
+a {
+    @apply text-blue-500 underline;
+}
+
+.listing {
+    @apply p-2 hover:bg-neutral-300 cursor-pointer;
+}
+
