@@ -1,12 +1,82 @@
-# React + Vite
+# 🎨 Art Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that showcases a curated collection of galleries, paintings, and artists. Designed to be fast, responsive, and easy to navigate.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live site here: [https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – UI library for building interactive user interfaces.
+- **Vite** – Lightning-fast build tool for modern web development.
+- **Netlify** – Hosting platform for deploying and managing the site.
+
+## 📂 Project Structure
+
+```
+src/
+├── assets/        # Static assets like images
+├── components/    # Reusable React components
+├── pages/         # Main views (e.g., Home, Gallery, Artist)
+├── data/          # Static or mock data (e.g., JSON of artworks)
+├── App.jsx        # Root component
+└── main.jsx       # Entry point
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/art-explorer.git
+   cd art-explorer
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📦 Deployment
+
+This site is automatically deployed via **Netlify**. Every push to the main branch triggers a build and deployment.
+
+To deploy manually:
+
+1. Run `npm run build`
+2. Upload the contents of the `dist/` directory to Netlify or link the repo in the Netlify dashboard.
+
+## 🖼️ Features
+
+- Browse curated art galleries
+- View detailed information about each painting
+- Learn about the artists behind the work
+- Fully responsive layout
+
+## 📌 TODOs
+
+- [ ] Add search and filter functionality
+- [ ] Integrate with a backend or CMS
+- [ ] Add user favorites / likes
+
+## 🧑‍🎨 Credits
+
+Artwork and artist data sourced from public domain art collections.
+
+## 📄 License
+
+MIT License. See [LICENSE](LICENSE) for details.
+```
+
+---
+
+Let me know if you want it tailored more for a team, hobby project, or something with a backend/API!
