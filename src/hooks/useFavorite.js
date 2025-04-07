@@ -2,12 +2,18 @@ import { useContext } from "react";
 import { FavoriteContext } from "../contexts/Contexts";
 
 
-const idMap = {
+const idMap = { //Used to change type keys to the coresponding ID
     paintings: "paintingId",
     galleries: "galleryId",
     artists: "artistId"
 
 }
+
+/*
+ * useFavorite
+ *
+ * Utility hook that will assess the favorites context
+ * */
 export function useFavorite(){
     const {favorites, setFavorites} = useContext(FavoriteContext);
     

@@ -18,7 +18,7 @@ export default function FavoriteButton({favKey, value}) {
     }
     return (
         <span>
-            <button onClick={handleFavorites} className="button">
+            <button onClick={handleFavorites} className="button mr-2">
                 {isFavorited(favKey, value) ? "Remove Favorite": "Add To Favorites"}
             </button> 
             <span>{favoritesMessage}</span>

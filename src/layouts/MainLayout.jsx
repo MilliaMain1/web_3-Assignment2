@@ -2,7 +2,11 @@ import { Link, Outlet } from "react-router";
 import { useFavorite } from "../hooks/useFavorite";
 import { useState } from "react";
 import FavoritesModal from "../components/FavoritesModal";
-
+/*
+ * MainLayout
+ * Used as a layout for all pages except the login page
+ *
+ * */
 export default function MainLayout() {
     const [favorites, setFavorites, toggleFavorites, isFavorited, isEmpty] = useFavorite(); 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,8 +19,8 @@ export default function MainLayout() {
     return (
         <div className="w-screen h-screen flex flex-col">
             <FavoritesModal isOpen={isModalOpen} handleClose={handleClose} />
-            <header className="">
-                <h1>Here is the top of the main layout </h1>
+            <header className="min-h-24 flex justify-between place-items-center mx-4">
+                <h1 className="flex-grow text-3xl font-bold w-screen">Painting Finder</h1>
                 <nav className="flex gap-4">
                     <Link to="/painting">Paintings</Link>                
                     <Link to="/gallery">Galleries</Link>                
@@ -26,7 +30,7 @@ export default function MainLayout() {
                     {!isEmpty() ? (<button className="link" onClick={handleOpen} to="/favorites">Favorites</button>) : ""}
                 </nav>
             </header> 
-            <main className="max-h-full max-w-full p-4">
+            <main className="h-7/8 h-7/8 p-4">
                 <Outlet />
             </main>
         </div>

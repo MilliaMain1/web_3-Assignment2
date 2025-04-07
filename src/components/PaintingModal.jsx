@@ -41,7 +41,7 @@ export default function PaintingModal({paintingInfo, handleClose}) {
                         <p><a href={painting.museumlink}>Museum Link</a></p>
                         <div>
                             <FavoriteButton favKey={"paintings"} value={painting} />
-                        </div>painting
+                        </div>
                     </section>
                     <DefaultImage src={imgSrc} />
                 </div>
