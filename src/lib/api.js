@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:3000/api"
+//const API_URL = "http://localhost:3000/api"
+const API_URL = "https://web-3-assignment1.onrender.com/api"
 
 
 const get = async (url) => {
