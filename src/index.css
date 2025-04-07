@@ -7,6 +7,9 @@ a {
     @apply text-blue-500 underline;
 }
 
+.link {
+    @apply text-blue-500 underline;
+}
 .listing {
     @apply p-2 hover:bg-neutral-300 cursor-pointer;
 }

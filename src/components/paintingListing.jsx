@@ -1,7 +1,7 @@
 const addDefaultImg = ev => {
    ev.target.src = "https://static.thenounproject.com/png/2616533-200.png"
 }
-export default function PaintingListing({painting, handleOpen}){
+export default function PaintingListing({painting, handleOpen, limitWidth}){
     const imgSrc = `https://res.cloudinary.com/funwebdev/image/upload/w_200/art/paintings/square/${painting.imageFileName}.jpg`
     return (
         <li 

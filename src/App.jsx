@@ -9,13 +9,16 @@ import { FavoriteContext } from './contexts/Contexts.js';
 import ArtistPage from './pages/artists.jsx';
 import GenrePage from './pages/genres.jsx';
 import PaintingsPage from './pages/paintings.jsx';
+import FavoritesModal from './components/FavoritesModal.jsx';
 
 function App() {
     const [favorites, setFavorites] = useState({
         paintings: [],
         galleries: [],
         artists: []
-    }) 
+    });
+
+    const [isModalOpen, setItModalOpen] = useState(false);
 
     return (
         <FavoriteContext.Provider value={{favorites, setFavorites}}>
