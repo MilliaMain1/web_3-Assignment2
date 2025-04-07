@@ -48,5 +48,9 @@ To deploy manually:
 
 - Browse curated art galleries
 - View detailed information about each painting
-- Learn about the artists behind the work
-- Fully responsive layout
+
+
+
+## Other Notes
+- Nuxt Rewrite next sprint
+- Actively being updated
