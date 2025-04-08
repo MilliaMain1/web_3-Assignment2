@@ -4,7 +4,6 @@ import { GenreContext } from "../contexts/Contexts";
 export default function GenreList({genres}){
     const {activeGenre, setActiveGenre} = useContext(GenreContext);
     const handleClick = (genre) => {
-        console.log("clicked ocurred")
         setActiveGenre(genre)
     }
     return (

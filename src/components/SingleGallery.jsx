@@ -4,6 +4,8 @@ export default function SingleGallery({gallery}) {
     const {activeGallery, setActiveGallery} = useContext(GalleryContext);
 
     return (
-        <div className="p-2 hover:bg-neutral-300 cursor-pointer" onClick={() => setActiveGallery(gallery)}>{gallery.galleryName}</div>
+        <div className="p-2 hover:bg-neutral-300 cursor-pointer" onClick={() => setActiveGallery(gallery)}>
+            {gallery.galleryName}
+        </div>
     )
 }

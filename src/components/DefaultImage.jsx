@@ -4,6 +4,6 @@ const addDefaultImg = ev => {
 
 export default function DefaultImage({src}) {
     return(
-        <img src={src} onError={addDefaultImg} />
+        <img  className="max-w-64 h-auto" src={src} onError={addDefaultImg} />
     )
 }

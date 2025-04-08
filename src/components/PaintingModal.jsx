@@ -17,15 +17,16 @@ export default function PaintingModal({paintingInfo, handleClose}) {
     },[paintingInfo])
 
     if(paintingInfo === null || painting === null) return;
-
-    const imgSrc = `https://res.cloudinary.com/funwebdev/image/upload/w_200/art/paintings/${painting.imageFileName}.jpg`
+    
+    const paddedImgId = painting.imageFileName.toString().padStart(6, "0")
+    const imgSrc = `/art-images/paintings/square/${paddedImgId}.jpg`
     
         return (
         <div 
             className="fixed flex justify-center content-center top-0 left-0 z-[1101] w-screen h-screen bg-black/[0.5] "
         >
-            <div className="rounded-xl w-1/3 h-min bg-white p-4">
-                <div className="flex justify-between place-items.center">
+            <div className="rounded-xl w-2/3 h-min bg-white p-4">
+                <div className="flex justify-between place-items-center">
                     <div className="mb-4">
                         <h3 className="w-full b-border text-2xl font-bold">{painting.title}</h3>
                         <h3 className="w-full b-border text-xl font-bold">{painting.artist.firstName} {painting.artist.lastName}</h3>
@@ -43,10 +44,10 @@ export default function PaintingModal({paintingInfo, handleClose}) {
                             <FavoriteButton favKey={"paintings"} value={painting} />
                         </div>
                     </section>
-                    <DefaultImage src={imgSrc} />
+                    <DefaultImage  src={imgSrc} />
                 </div>
                 <div>
-                    {painting.description ? (<><strong>Descrpiton:</strong><p>{painting.description}</p></>) : ""}
+                    {painting.description ? (<><strong>Descripiton:</strong><p>{painting.description}</p></>) : ""}
                 </div>
             </div>
         </div>
